@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato</title>
-    <link rel="stylesheet" href="contato.css">
+    <link rel="stylesheet" href="../styles/contato.css">
 </head>
+
 <body>
 
-    <form method="POST">
+    <form>
         <h2>Fale Conosco</h2>
 
         <label for="nome"><b>Nome</b></label>
@@ -28,8 +30,14 @@
         <label for="mensagem"><b>Mensagem</b></label>
         <textarea id="mensagem" required></textarea>
 
-        <button type="submit"><b>Enviar</b></button>
+
+        <div class="buttons">
+            <button type="submit"><b>Enviar</b></button>
+            <button type="button" onclick="returntoHome()">Voltar</button>
+        </div>
     </form>
 
+    <script src="../js/contato.js"></script>
 </body>
+
 </html>
